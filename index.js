@@ -6,3 +6,36 @@ function saturdayFun(activity="roller-skate") {
 function mondayWork(activity="go to the office"){
   return `This Monday, I will ${activity}!`;
 }
+
+function wrapAdjective(visual="*") {
+  return function(default="special") {
+    return `You are ${visual}${however}${visual}!`
+  }
+}
+ wrapAdjective("%")("a dedicated programmer") 
+ 
+ const Calculator = {
+  add: function(a,b) {
+    return a + b;
+  },
+  subtract: function(a,b) {
+    return a - b
+  },
+  multiply: function(a,b) {
+    return a * b
+  },
+  divide: function(a,b) {
+    return a / b;
+  }
+}
+
+
+let actionApplyer = function(start, ray) {
+  let a = start
+
+  for (let i = 0; i < ray.length; i++ ){
+    a = ray[i](a)
+  }
+
+  return a
+}
