@@ -12,8 +12,8 @@ function wrapAdjective(visual="*") {
     return `You are ${visual}${however}${visual}!`
   }
 }
- wrapAdjective("%")("a dedicated programmer") 
- 
+ wrapAdjective("%")("a dedicated programmer")
+
  const Calculator = {
   add: function(a,b) {
     return a + b;
