@@ -9,7 +9,7 @@ function mondayWork(activity="go to the office"){
 
 function wrapAdjective(visual="*") {
   return function(default="special") {
-    return `You are ${visual}${however}${visual}!`
+    return `You are ${visual}${default}${visual}!`
   }
 }
  wrapAdjective("%")("a dedicated programmer")
