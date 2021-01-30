@@ -13,5 +13,3 @@ function wrapAdjective(visual="*") {
   }
 }
  wrapAdjective("%")("a dedicated programmer")
-
- 
